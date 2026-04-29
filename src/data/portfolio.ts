@@ -118,7 +118,7 @@ export const projectCategories: ProjectCategory[] = [
   "E-commerce",
   "Admin Systems",
   "Corporate",
-  "SEO",
+  "Static Websites",
 ];
 
 export const projects = [
@@ -155,7 +155,7 @@ export const projects = [
   },
   {
     title: "Shivesh Construction Website",
-    category: "SEO" as ProjectCategory,
+    category: "Static Websites" as ProjectCategory,
     year: "2025",
     stack: ["Next.js", "Static Rendering", "Lead Forms", "SEO", "Responsive UI"],
     summary:
