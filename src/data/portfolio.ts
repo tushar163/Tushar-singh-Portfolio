@@ -3,7 +3,7 @@ export type ProjectCategory =
   | "E-commerce"
   | "Admin Systems"
   | "Corporate"
-  | "SEO";
+  | "Static Websites";
 
 export type MediaType = "image" | "video" | "visual";
 
@@ -53,7 +53,7 @@ export const aboutVariations = [
 export const stats = [
   { value: "12+", label: "Production-ready applications shipped" },
   { value: "1.5+", label: "Years across MERN and Next.js delivery" },
-  { value: "4", label: "Core domains: e-commerce, CMS, admin, SEO" },
+  { value: "4", label: "Core domains: e-commerce, CMS, admin, Static Websites" },
   // { value: "Full SDLC", label: "Planning, development, integration, deployment" },
 ];
 
