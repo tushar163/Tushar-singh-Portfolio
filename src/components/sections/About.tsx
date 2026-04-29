@@ -17,7 +17,7 @@ export function About() {
           <p className="mt-7 text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
             About me
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--foreground)]">
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
             Full-stack execution with product-focused thinking.
           </h2>
           <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
@@ -29,11 +29,11 @@ export function About() {
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
             Why HR should shortlist me
           </p>
-          <h3 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-[var(--foreground)]">
+          <h3 className="mt-4 max-w-3xl text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
             I bring practical MERN stack delivery experience across real
             business-critical systems.
           </h3>
-          <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--muted)]">
+          <p className="mt-5 max-w-3xl text-base leading-7 text-[var(--muted)] sm:leading-8">
             I am a full stack web developer with 1.5+ years of hands-on
             production experience building e-commerce platforms, CMS workflows,
             admin panels, dashboards, API integrations, and SEO-friendly

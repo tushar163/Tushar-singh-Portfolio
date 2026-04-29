@@ -23,7 +23,7 @@ const hiringHighlights = [
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-[calc(100vh-4rem)] py-16 lg:py-20">
+    <section id="home" className="min-h-[calc(100vh-4rem)] py-12 sm:py-16 lg:py-20">
       <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line)] bg-[var(--panel)] px-4 py-2 text-sm text-[var(--muted)] shadow-sm">
@@ -34,13 +34,13 @@ export function Hero() {
           <p className="mt-8 text-sm font-semibold uppercase tracking-[0.32em] text-[var(--accent)]">
             Building scalable web products
           </p>
-          <h1 className="mt-3 max-w-4xl text-5xl font-semibold tracking-tight text-[var(--foreground)] sm:text-6xl lg:text-7xl">
+          <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-[var(--foreground)] sm:text-6xl lg:text-7xl">
             {profile.name}
           </h1>
-          <p className="mt-3 text-xl font-semibold text-[var(--muted)] sm:text-2xl">
+          <p className="mt-3 text-lg font-semibold text-[var(--muted)] sm:text-2xl">
             {profile.role} / {profile.specialty}
           </p>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8">
             I build fast, responsive, and production-ready web applications that
             help businesses manage products, content, users, orders, payments,
             leads, and internal operations with confidence.
@@ -55,7 +55,7 @@ export function Hero() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a className="btn-primary" href="#projects">
               View My Work
             </a>

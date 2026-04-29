@@ -50,6 +50,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+}
+
 body {
   background:
     radial-gradient(circle at 12% 8%, rgba(11, 17, 181, 0.24), transparent 26rem),
@@ -69,6 +74,19 @@ h5,
 h6,
 .font-display {
   font-family: var(--font-space-grotesk), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button {
+  overflow-wrap: anywhere;
 }
 
 a {
@@ -206,6 +224,8 @@ a {
   padding: 0.75rem 1.15rem;
   font-size: 0.875rem;
   font-weight: 700;
+  justify-content: center;
+  text-align: center;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -244,7 +264,9 @@ a {
   font-size: 0.82rem;
   font-weight: 650;
   line-height: 1;
+  max-width: 100%;
   padding: 0.65rem 0.85rem;
+  white-space: normal;
 }
 
 .tag {
@@ -285,6 +307,7 @@ a {
 .project-list-button {
   display: flex;
   width: 100%;
+  min-width: 0;
   align-items: flex-start;
   gap: 1rem;
   border: 1px solid var(--line);
@@ -325,6 +348,7 @@ a {
 .project-list-meta {
   display: inline-flex;
   align-items: center;
+  max-width: 100%;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
@@ -336,6 +360,9 @@ a {
 
 .project-detail-shell {
   min-height: 34rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   display: grid;
   grid-template-rows: auto minmax(15rem, 1fr);
 }
@@ -410,6 +437,9 @@ a {
 
 .project-media {
   min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow: hidden;
   border-left: 1px solid var(--line);
   background:
@@ -505,6 +535,100 @@ a {
 }
 
 @media (max-width: 640px) {
+  body {
+    background:
+      radial-gradient(circle at 5% 4%, rgba(11, 17, 181, 0.22), transparent 18rem),
+      radial-gradient(circle at 92% 14%, rgba(50, 0, 99, 0.2), transparent 18rem),
+      linear-gradient(180deg, var(--background), var(--background));
+  }
+
+  .site-grid {
+    background-size: 48px 48px;
+    opacity: 0.24;
+  }
+
+  .panel,
+  .hero-profile-card,
+  .about-identity-card {
+    border-radius: 20px;
+  }
+
+  .hero-profile-card,
+  .about-identity-card {
+    padding: 1rem;
+  }
+
+  .metric-card,
+  .impact-card,
+  .hero-proof-row,
+  .outcome-row,
+  .depth-row,
+  .project-list-button {
+    border-radius: 16px;
+    padding: 0.9rem;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost {
+    width: 100%;
+  }
+
+  .hero-initials {
+    height: 3.2rem;
+    width: 3.2rem;
+    font-size: 1rem;
+  }
+
+  .about-avatar {
+    height: 5.25rem;
+    width: 5.25rem;
+    font-size: 1.35rem;
+  }
+
+  .project-list-button {
+    gap: 0.75rem;
+  }
+
+  .project-list-button,
+  .project-list-button * {
+    min-width: 0;
+  }
+
+  .project-list-index {
+    height: 1.9rem;
+    width: 1.9rem;
+    font-size: 0.7rem;
+  }
+
+  .project-detail-shell {
+    min-height: auto;
+    grid-template-rows: auto;
+  }
+
+  .project-media {
+    min-height: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .project-media video,
+  .project-media .relative {
+    min-height: 14rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .live-project-panel {
+    min-height: auto;
+    place-items: start;
+    padding: 1rem;
+  }
+
+  .field {
+    border-radius: 14px;
+  }
+
   .hero-depth {
     min-height: 30rem;
   }

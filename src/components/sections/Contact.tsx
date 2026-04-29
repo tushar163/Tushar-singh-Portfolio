@@ -36,7 +36,7 @@ export function Contact() {
         <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[var(--accent)]">
           Contact
         </p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[var(--foreground)]">
+        <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--foreground)] sm:text-4xl">
           Ready to build a fast, scalable web product.
         </h2>
         <p className="mt-5 text-base leading-7 text-[var(--muted)]">
@@ -47,7 +47,7 @@ export function Contact() {
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
           <a href={`tel:${profile.phone.replaceAll(" ", "")}`}>{profile.phone}</a>
           <p>{profile.location}</p>
-          <div className="flex flex-wrap gap-3 pt-3">
+          <div className="flex flex-col gap-3 pt-3 sm:flex-row sm:flex-wrap">
             <a className="btn-secondary" href={profile.socials.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>

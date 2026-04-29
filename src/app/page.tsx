@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <main className="relative overflow-hidden">
         <div className="site-grid" />
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-24 px-5 sm:px-8 lg:px-10">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 sm:gap-24 sm:px-8 lg:px-10">
           <Hero />
           <About />
           <Skills />

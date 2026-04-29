@@ -106,7 +106,7 @@ export function Projects() {
         description="Browse the completed project list, select one, and review the focused case details. Live projects open directly, while non-live projects show supporting image or video media."
       />
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex min-w-0 flex-wrap gap-2">
         {projectCategories.map((category) => (
           <button
             type="button"
@@ -119,9 +119,9 @@ export function Projects() {
         ))}
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[0.42fr_0.58fr]">
-        <div className="panel p-4">
-          <div className="mb-4 flex items-center justify-between gap-3 px-2">
+      <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)]">
+        <div className="panel min-w-0 p-4">
+          <div className="mb-4 flex flex-col gap-3 px-2 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               Project List
             </p>
@@ -161,19 +161,19 @@ export function Projects() {
           </div>
         </div>
 
-        <div className="min-h-[34rem]">
+        <div className="min-h-[34rem] min-w-0">
           <AnimatePresence mode="wait">
             {selectedProject ? (
               <motion.article
                 key={selectedProject.title}
-                initial={{ opacity: 0, x: 18 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -18 }}
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -14 }}
                 transition={{ duration: 0.28 }}
-                className="panel project-detail-shell overflow-hidden"
+                className="panel project-detail-shell min-w-0 overflow-hidden"
               >
-                <div className="p-6 lg:p-8">
-                  <div className="flex flex-wrap items-center gap-3">
+                <div className="min-w-0 p-6 lg:p-8">
+                  <div className="flex min-w-0 flex-wrap items-center gap-3">
                     <span className="tag">{selectedProject.category}</span>
                     <span className="tag">{selectedProject.year}</span>
                     <span className="tag">
@@ -183,14 +183,14 @@ export function Projects() {
                     </span>
                   </div>
 
-                  <h3 className="mt-6 text-3xl font-semibold tracking-tight text-[var(--foreground)]">
+                  <h3 className="mt-6 text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
                     {selectedProject.title}
                   </h3>
                   <p className="mt-4 text-base leading-7 text-[var(--muted)]">
                     {selectedProject.summary}
                   </p>
 
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-6 flex min-w-0 flex-wrap gap-2">
                     {selectedProject.stack.map((item) => (
                       <span key={item} className="skill-pill">
                         {item}
@@ -214,7 +214,7 @@ export function Projects() {
                       <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent-strong)]">
                         Live Project
                       </p>
-                      <h4 className="mt-4 text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+                      <h4 className="mt-4 text-xl font-semibold tracking-tight text-[var(--foreground)] sm:text-2xl">
                         This project has a public live link, so the portfolio
                         prioritizes the deployed product over static media.
                       </h4>
