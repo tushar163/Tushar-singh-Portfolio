@@ -184,3 +184,28 @@ export const projects = [
     liveUrl: "https://sublimetechnocorp.com",
   },
 ];
+
+
+
+export const folderStructure = `src/
+  app/
+    api/contact/route.ts       // contact form endpoint
+    resume/route.ts            // downloads public/Tushar_Singh-1.pdf
+    layout.tsx                 // metadata, fonts, providers
+    loading.tsx                // skeleton loading screen
+    page.tsx                   // server-rendered landing page
+  components/
+    sections/                  // Hero, About, Skills, Experience, Projects, Contact
+    ui/                        // Navbar, ThemeProvider, MotionSection, reusable UI
+  data/
+    portfolio.ts               // content, skills, projects, feature suggestions
+public/
+  projects/                    // demo videos and project media`;
+
+export const seoChecklist = [
+  "Keep the main page server-rendered and pass only interactive islands to Client Components.",
+  "Use descriptive metadata, Open Graph content, semantic headings, and project-specific copy.",
+  "Lazy-load heavy media and keep video preload to metadata.",
+  "Use responsive CSS constraints to prevent layout shift across mobile and desktop.",
+  "Keep animation transforms GPU-friendly and respect prefers-reduced-motion.",
+];
