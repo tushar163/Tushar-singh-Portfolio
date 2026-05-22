@@ -14,10 +14,10 @@ export const profile = {
   experience: "1.5+ years",
   email: "tusharsingh6171@gmail.com",
   phone: "+91 82184 46921",
-  location: "Mumbai, India",
+  location: "Noida, India",
   socials: {
     github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/tushar-singh-746985335/",
   },
 };
 
