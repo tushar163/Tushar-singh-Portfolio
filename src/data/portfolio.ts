@@ -136,7 +136,7 @@ export const projects = [
     ],
     mediaType: "video" as MediaType,
     mediaSrc: "/projects/Demo.mp4",
-    liveUrl: "https://mkghare.com",
+    liveUrl: "https://mkgharejewellers.com/?srsltid=AfmBOorVlBltufTrl8gM6x8jeJqwnEBEyZlF0y5mmAYnhDfXBWrU8bZb",
   },
   {
     title: "Kidzbook Unified Admin Panel System",
