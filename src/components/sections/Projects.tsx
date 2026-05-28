@@ -11,6 +11,23 @@ import {
 } from "@/data/portfolio";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 
+function CaseStudyBlock({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="case-study-block">
+      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
+        {title}
+      </p>
+      <div className="mt-3 text-sm leading-7 text-[var(--muted)]">{children}</div>
+    </div>
+  );
+}
+
 function ProjectMedia({
   type,
   src,
@@ -102,8 +119,8 @@ export function Projects() {
     <section id="projects" className="space-y-10">
       <SectionIntro
         eyebrow="Projects"
-        title="Project list first, details on demand."
-        description="Browse the completed project list, select one, and review the focused case details. Live projects open directly, while non-live projects show supporting image or video media."
+        title="Product case studies, structured for fast hiring review."
+        description="Select a project to scan the role, problem, build scope, impact, and stack. Live projects open directly, while non-live projects show supporting media."
       />
 
       <div className="flex min-w-0 flex-wrap gap-2">
@@ -190,6 +207,28 @@ export function Projects() {
                     {selectedProject.summary}
                   </p>
 
+                  <div className="mt-6 grid gap-3">
+                    <CaseStudyBlock title="My Role">
+                      <p>{selectedProject.role}</p>
+                    </CaseStudyBlock>
+                    <CaseStudyBlock title="Problem">
+                      <p>{selectedProject.problem}</p>
+                    </CaseStudyBlock>
+                    <CaseStudyBlock title="What I Built">
+                      <ul className="grid gap-2">
+                        {selectedProject.built.map((item) => (
+                          <li key={item} className="flex gap-3">
+                            <span className="mt-3 h-1.5 w-1.5 flex-none rounded-full bg-[var(--accent)]" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CaseStudyBlock>
+                    <CaseStudyBlock title="Impact">
+                      <p>{selectedProject.impact}</p>
+                    </CaseStudyBlock>
+                  </div>
+
                   <div className="mt-6 flex min-w-0 flex-wrap gap-2">
                     {selectedProject.stack.map((item) => (
                       <span key={item} className="skill-pill">
@@ -198,14 +237,6 @@ export function Projects() {
                     ))}
                   </div>
 
-                  <div className="mt-6 grid gap-3">
-                    {selectedProject.outcomes.map((outcome) => (
-                      <div key={outcome} className="outcome-row">
-                        <span />
-                        <p>{outcome}</p>
-                      </div>
-                    ))}
-                  </div>
                 </div>
 
                 {selectedProject.liveUrl ? (

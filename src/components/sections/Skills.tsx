@@ -7,8 +7,8 @@ export function Skills() {
     <MotionSection id="skills" className="space-y-10">
       <SectionIntro
         eyebrow="Skills"
-        title="A balanced stack for modern web products."
-        description="The stack is grouped by how work actually ships: interface, API, data, and deployment. This keeps the section easy for recruiters to scan and useful for clients evaluating delivery capability."
+        title="A production stack shaped by real delivery."
+        description="Grouped by how product work actually ships: UI, APIs, databases, integrations, and deployment. Recruiters can scan the stack quickly without digging through long paragraphs."
       />
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {skillGroups.map((group) => (

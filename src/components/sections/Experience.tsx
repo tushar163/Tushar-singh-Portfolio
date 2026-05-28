@@ -7,8 +7,8 @@ export function Experience() {
     <MotionSection id="experience" className="space-y-10">
       <SectionIntro
         eyebrow="Experience"
-        title="Built through real production work, not tutorial-only projects."
-        description="The experience section emphasizes responsibility, ownership, and delivery impact across full-stack product development."
+        title="Delivery experience across client-facing production work."
+        description="Focused on ownership, implementation scope, and business systems delivered across frontend, backend, database workflows, and deployment."
       />
       <div className="grid gap-6">
         {experiences.map((experience) => (

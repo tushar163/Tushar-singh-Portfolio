@@ -30,53 +30,50 @@ export const navItems = [
 ];
 
 export const taglineOptions = [
-  "Engineering production-ready web products with scalable architecture and polished UX.",
-  "Full stack MERN developer building fast, recruiter-friendly, business-ready applications.",
-  "I turn complex product requirements into clean interfaces, reliable APIs, and measurable outcomes.",
-];
-
-export const aboutVariations = [
-  {
-    label: "Recruiter focused",
-    text: "I am a full stack web developer with 1.5+ years of hands-on experience building production applications across e-commerce, CMS platforms, admin panels, and corporate websites. My work combines clean React and Next.js interfaces with reliable Node.js APIs, database design, API integrations, and cloud deployment ownership.",
-  },
-  {
-    label: "Client focused",
-    text: "I help businesses ship web products that are fast, responsive, and easy to operate. From SEO-friendly websites to inventory workflows, payment integrations, dashboards, and role-based admin systems, I focus on practical outcomes: better visibility, smoother operations, and scalable product foundations.",
-  },
-  {
-    label: "Technical focused",
-    text: "My strength is connecting frontend craft with backend architecture. I engineer reusable UI systems, REST APIs, database-backed workflows, authentication, payment integrations, and deployment pipelines while keeping performance, accessibility, and maintainability in view from day one.",
-  },
+  "Full Stack Web Developer building production-ready MERN applications.",
+  "I build scalable web products, admin systems, e-commerce workflows, CMS platforms, and SEO-friendly business websites.",
+  "A production-minded MERN developer who can build real business systems, not just frontend screens.",
 ];
 
 export const stats = [
   { value: "12+", label: "Production-ready applications shipped" },
   { value: "1.5+", label: "Years across MERN and Next.js delivery" },
-  { value: "4", label: "Core domains: e-commerce, CMS, admin, Static Websites" },
-  // { value: "Full SDLC", label: "Planning, development, integration, deployment" },
+  { value: "Full SDLC", label: "Planning, UI, APIs, deployment, optimization" },
+];
+
+export const credibilitySignals = [
+  "Full SDLC exposure",
+  "Admin panel architecture",
+  "Payments and OAuth",
+  "Cloud deployment",
+  "SEO and performance",
+  "Client-facing production work",
 ];
 
 export const skillGroups = [
   {
-    title: "Frontend Engineering",
-    description: "Modern UI architecture for fast, responsive product experiences.",
-    items: ["React.js", "Next.js", "Tailwind CSS", "SSR", "CSR", "Responsive UI"],
+    title: "Frontend Product UI",
+    description:
+      "Production interfaces for dashboards, commerce flows, forms, and responsive business websites.",
+    items: ["React.js", "Next.js", "Tailwind CSS", "SSR", "CSR", "Responsive UI", "Used in production"],
   },
   {
-    title: "Backend Engineering",
-    description: "API-first backend systems with clear contracts and reliable integrations.",
-    items: ["Node.js", "Express.js", "REST APIs", "OAuth", "Razorpay", "Stripe"],
+    title: "Backend APIs",
+    description:
+      "API-first backend systems with maintainable contracts, auth flows, and business logic.",
+    items: ["Node.js", "Express.js", "REST APIs", "Authentication", "Business Logic"],
   },
   {
-    title: "Data Layer",
-    description: "Practical database choices for CMS, commerce, analytics, and admin flows.",
+    title: "Databases",
+    description:
+      "Database-backed workflows for CMS, commerce, analytics, admin panels, and user operations.",
     items: ["MongoDB", "MySQL", "PostgreSQL", "Prisma", "Schema Design"],
   },
   {
-    title: "Delivery",
-    description: "Production thinking across performance, SEO, source control, and cloud release.",
-    items: ["Git", "Cloud Deployment", "SEO Optimization", "Performance Audits"],
+    title: "Integrations & Delivery",
+    description:
+      "Production delivery across payments, OAuth, SEO, source control, and cloud release.",
+    items: ["OAuth", "Razorpay", "Stripe", "Git", "Cloud Deployment", "SEO Optimization"],
   },
 ];
 
@@ -84,31 +81,27 @@ export const experiences = [
   {
     role: "Full Stack Developer",
     company: "PCD Consultancy Services",
-    period: "July 2025 – November 2025",
+    period: "July 2025 - November 2025",
     location: "Mumbai, India",
     summary:
-      "Delivered scalable full-stack applications and admin systems with end-to-end ownership from development to deployment.",
+      "Architected and deployed production web applications including dynamic websites, admin systems, and backend services.",
     highlights: [
-      "Architected and deployed 5 production applications including 2 dynamic websites, 1 complete admin panel with backend infrastructure, and a mobile application backend using React.js, Next.js, Node.js, and MySQL.",
-      "Developed custom CMS platforms and admin panels enabling non-technical users to manage content efficiently, reducing content update time through streamlined workflows.",
-      "Managed cloud server deployment, configuration, and optimization ensuring 99.9% uptime and improved security practices.",
-      // "Collaborated with cross-functional teams to design intuitive UI and deliver feature-rich applications using agile methodologies.",
+      "Built CMS and admin workflows that helped non-technical teams manage content, products, and operational data.",
+      "Handled frontend UI, backend APIs, database-backed workflows, and deployment-ready delivery.",
+      "Improved reliability and performance through server configuration, optimization, and production-minded implementation.",
     ],
   },
   {
     role: "Web Developer Intern",
     company: "Sublime Technocorp",
-    period: "June 2024 – May 2025",
+    period: "June 2024 - May 2025",
     location: "Navi Mumbai, India",
     summary:
-      "Built and optimized responsive web applications with a strong focus on performance, API integration, and SEO.",
+      "Delivered responsive React and Next.js applications with API integrations, SEO improvements, and performance-focused implementation.",
     highlights: [
-      "Architected and deployed 7+ production applications including 3 dynamic websites and 1 complete admin panel using React.js, Next.js, Node.js, and MySQL.",
-      "Engineered responsive web interfaces improving user engagement and overall frontend performance.",
-      // "Integrated and validated RESTful APIs ensuring seamless data flow with reliable functionality.",
-      // "Developed backend services using Node.js with MySQL, PostgreSQL, and MongoDB, implementing efficient database schemas.",
-      "Applied SSR and CSR techniques to optimize page load speed and SEO performance.",
-      // "Improved application performance using code splitting, lazy loading, and caching strategies.",
+      "Built production websites and admin interfaces using React.js, Next.js, Node.js, and MySQL.",
+      "Worked across UI implementation, backend services, database-backed workflows, and production handoff.",
+      "Applied SSR and CSR patterns to improve load speed, SEO visibility, and frontend performance.",
     ],
   },
 ];
@@ -128,15 +121,22 @@ export const projects = [
     year: "2024",
     stack: ["Next.js", "React.js", "Node.js", "MongoDB", "OAuth", "Payments"],
     summary:
-      "Developed a full-stack e-commerce platform with customer-facing shopping flows and a business-ready admin panel for daily operations.",
-    outcomes: [
-      "Engineered product, inventory, order, banner, and CMS management workflows to reduce manual operational effort.",
-      "Integrated OAuth and payment flows to support secure customer onboarding and checkout.",
-      "Optimized responsive UI and SEO structure for product discovery across website and mobile traffic.",
+      "A production e-commerce platform with customer shopping flows and an admin system for managing daily commerce operations.",
+    role:
+      "Full-stack development, admin panel architecture, API integration, payment-ready flows, and responsive UI.",
+    problem:
+      "The business needed an online store that could handle product discovery, checkout readiness, and internal management without relying on manual updates.",
+    built: [
+      "Customer-facing product and shopping flows with responsive UI for desktop and mobile.",
+      "Admin workflows for products, inventory, orders, banners, and CMS content.",
+      "OAuth login and payment-ready checkout foundations for secure customer onboarding.",
     ],
+    impact:
+      "Created a more manageable commerce system where business teams can update inventory, process orders, and support online product discovery.",
     mediaType: "video" as MediaType,
     mediaSrc: "/projects/Demo.mp4",
-    liveUrl: "https://mkgharejewellers.com/?srsltid=AfmBOorVlBltufTrl8gM6x8jeJqwnEBEyZlF0y5mmAYnhDfXBWrU8bZb",
+    liveUrl:
+      "https://mkgharejewellers.com/?srsltid=AfmBOorVlBltufTrl8gM6x8jeJqwnEBEyZlF0y5mmAYnhDfXBWrU8bZb",
   },
   {
     title: "Kidzbook Unified Admin Panel System",
@@ -144,14 +144,20 @@ export const projects = [
     year: "2025",
     stack: ["Next.js", "Node.js", "RBAC", "REST APIs", "Analytics", "CMS"],
     summary:
-      "Architected a scalable multi-dashboard admin system that unifies social, e-commerce, education, events, analytics, and permissions into one control surface.",
-    outcomes: [
-      "Designed a module-based architecture with dynamic switching so teams can move between business domains without context loss.",
-      "Implemented role-based access control, permission-based rendering, audit logs, and tracking for safer admin operations.",
-      "Built per-module analytics and UI theme customization to support scalable product ownership across teams.",
+      "A scalable multi-module admin system for social, e-commerce, education, events, analytics, permissions, and operations.",
+    role:
+      "Admin system architecture, frontend dashboards, backend API integration, RBAC planning, and scalable UI workflows.",
+    problem:
+      "The product needed one control surface for multiple business modules without creating disconnected dashboards for each team.",
+    built: [
+      "Module-based dashboard architecture with dynamic module switching.",
+      "RBAC, permission-based rendering, audit logs, and tracking for safer admin operations.",
+      "Per-module analytics and theme customization to support product ownership across teams.",
     ],
+    impact:
+      "Improved admin scalability by giving teams a unified interface for managing complex product modules and permissions.",
     mediaType: "visual" as MediaType,
-    mediaSrc:"/projects/Kidzbook-admin.png",
+    mediaSrc: "/projects/Kidzbook-admin.png",
   },
   {
     title: "Shivesh Construction Website",
@@ -159,12 +165,18 @@ export const projects = [
     year: "2025",
     stack: ["Next.js", "Static Rendering", "Lead Forms", "SEO", "Responsive UI"],
     summary:
-      "Built an SEO-friendly static website for a construction business with a clear service narrative and lead-generation paths.",
-    outcomes: [
-      "Structured service pages and metadata for stronger search visibility and recruiter/client confidence.",
-      "Added inquiry forms and conversion-focused sections to turn visitors into qualified leads.",
-      "Delivered a fast responsive interface that keeps project information easy to scan on every device.",
+      "A fast, SEO-friendly business website focused on service discovery, trust, and lead generation.",
+    role:
+      "Frontend implementation, static site structure, SEO page planning, responsive UI, and lead form integration.",
+    problem:
+      "The business needed a professional web presence that explained services clearly and converted visitors into inquiries.",
+    built: [
+      "SEO-conscious page structure with clear service sections and business credibility signals.",
+      "Responsive UI for mobile and desktop visitors.",
+      "Lead inquiry flow to support client acquisition.",
     ],
+    impact:
+      "Improved service visibility and created a clearer path for potential customers to understand offerings and submit inquiries.",
     mediaType: "visual" as MediaType,
     liveUrl: "https://shivesh-web.vercel.app",
   },
@@ -174,18 +186,22 @@ export const projects = [
     year: "2024",
     stack: ["Next.js", "React.js", "Tailwind CSS", "Performance", "SEO"],
     summary:
-      "Delivered a modern corporate website focused on credibility, service clarity, performance, and SEO improvements.",
-    outcomes: [
-      "Optimized page structure, responsiveness, and loading behavior to create a more polished business presence.",
-      "Translated service offerings into a clear UI hierarchy for faster visitor understanding.",
-      "Improved technical SEO and performance foundations for better discoverability and retention.",
+      "A modern corporate website designed to improve service clarity, brand trust, performance, and discoverability.",
+    role:
+      "Frontend development, responsive layouts, performance optimization, SEO improvements, and content presentation.",
+    problem:
+      "The company needed a sharper digital presence that communicated services quickly and felt credible to business visitors.",
+    built: [
+      "Modern responsive pages with structured service and portfolio content.",
+      "Performance-conscious frontend implementation using Next.js and Tailwind CSS.",
+      "SEO-friendly page hierarchy for better discoverability.",
     ],
+    impact:
+      "Created a more polished business presence with clearer service communication and stronger technical foundations.",
     mediaType: "visual" as MediaType,
     liveUrl: "https://sublimetechnocorp.com",
   },
 ];
-
-
 
 export const folderStructure = `src/
   app/

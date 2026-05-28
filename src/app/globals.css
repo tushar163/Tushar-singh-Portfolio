@@ -367,6 +367,13 @@ a {
   grid-template-rows: auto minmax(15rem, 1fr);
 }
 
+.case-study-block {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--panel-strong) 72%, transparent);
+  padding: 1rem;
+}
+
 .outcome-row,
 .depth-row {
   display: flex;

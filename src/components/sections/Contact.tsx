@@ -37,17 +37,21 @@ export function Contact() {
           Contact
         </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--foreground)] sm:text-4xl">
-          Ready to build a fast, scalable web product.
+          Let&apos;s build something production-ready.
         </h2>
         <p className="mt-5 text-base leading-7 text-[var(--muted)]">
-          Open to MERN stack roles, freelance builds, admin panel systems,
-          e-commerce platforms, and SEO-focused business websites.
+          Available for full-time MERN stack roles, startup teams, freelance
+          builds, admin systems, e-commerce platforms, and performance-focused
+          web applications.
         </p>
         <div className="mt-8 grid gap-3 text-sm text-[var(--muted)]">
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
           <a href={`tel:${profile.phone.replaceAll(" ", "")}`}>{profile.phone}</a>
           <p>{profile.location}</p>
           <div className="flex flex-col gap-3 pt-3 sm:flex-row sm:flex-wrap">
+            <a className="btn-primary" href="/resume">
+              Download Resume
+            </a>
             <a className="btn-secondary" href={profile.socials.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>

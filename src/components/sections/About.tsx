@@ -1,11 +1,11 @@
-import { profile, stats } from "@/data/portfolio";
+import { credibilitySignals, profile, stats } from "@/data/portfolio";
 import { MotionSection } from "@/components/ui/MotionSection";
 
 const strengths = [
   "Architected admin systems with RBAC, permission-based rendering, audit logs, and module dashboards.",
-  "Engineered e-commerce workflows covering products, inventory, orders, banners, CMS, OAuth, and payments.",
+  "Engineered e-commerce workflows for products, inventory, orders, banners, CMS, OAuth, and payments.",
   "Delivered SEO-friendly business websites with responsive UI, lead forms, and performance-focused structure.",
-  "Worked across the full SDLC, from requirement understanding and UI implementation to backend APIs and deployment.",
+  "Worked across the full SDLC from requirements and UI implementation to backend APIs and deployment.",
 ];
 
 export function About() {
@@ -30,16 +30,14 @@ export function About() {
             Why HR should shortlist me
           </p>
           <h3 className="mt-4 max-w-3xl text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
-            I bring practical MERN stack delivery experience across real
+            Practical MERN stack delivery experience across real
             business-critical systems.
           </h3>
           <p className="mt-5 max-w-3xl text-base leading-7 text-[var(--muted)] sm:leading-8">
-            I am a full stack web developer with 1.5+ years of hands-on
-            production experience building e-commerce platforms, CMS workflows,
-            admin panels, dashboards, API integrations, and SEO-friendly
-            websites. I care about interfaces that feel polished, backend
-            systems that stay maintainable, and features that solve actual
-            operational problems.
+            I bring hands-on full-stack delivery experience across real
+            business systems, not just UI clones. I have worked on e-commerce
+            platforms, admin dashboards, CMS workflows, static websites, API
+            integrations, OAuth, payments, and deployment-ready applications.
           </p>
 
           <div className="mt-7 grid gap-4 sm:grid-cols-3">
@@ -61,6 +59,14 @@ export function About() {
                 <span />
                 <p>{strength}</p>
               </div>
+            ))}
+          </div>
+
+          <div className="mt-7 flex flex-wrap gap-2">
+            {credibilitySignals.map((signal) => (
+              <span key={signal} className="skill-pill">
+                {signal}
+              </span>
             ))}
           </div>
         </article>

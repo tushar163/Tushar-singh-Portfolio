@@ -10,15 +10,14 @@ const heroSkills = [
   "PostgreSQL",
   "Prisma",
   "REST APIs",
-  "OAuth",
-  "Stripe",
-  "Razorpay",
+  "Payments",
+  "Deployment",
 ];
 
 const hiringHighlights = [
-  "Built 12+ production applications across e-commerce, CMS, admin panels, and SEO websites.",
-  "Comfortable owning frontend, backend APIs, database workflows, deployment, and optimization.",
-  "Focused on clean UI, scalable architecture, fast load times, and practical business outcomes.",
+  "Built 12+ production applications across e-commerce, CMS, admin panels, and business websites.",
+  "Handled frontend UI, backend APIs, database workflows, deployment, integrations, and optimization.",
+  "Focused on clean interfaces, scalable architecture, performance, and real operational outcomes.",
 ];
 
 export function Hero() {
@@ -28,22 +27,22 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line)] bg-[var(--panel)] px-4 py-2 text-sm text-[var(--muted)] shadow-sm">
             <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent)] pulse-dot" />
-            Available for full-time MERN stack roles
+            Open to full-time roles and freelance builds
           </div>
 
           <p className="mt-8 text-sm font-semibold uppercase tracking-[0.32em] text-[var(--accent)]">
-            Building scalable web products
+            Production-minded MERN developer
           </p>
           <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-[var(--foreground)] sm:text-6xl lg:text-7xl">
             {profile.name}
           </h1>
           <p className="mt-3 text-lg font-semibold text-[var(--muted)] sm:text-2xl">
-            {profile.role} / {profile.specialty}
+            {profile.role} building production-ready {profile.specialty} applications.
           </p>
           <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8">
-            I build fast, responsive, and production-ready web applications that
-            help businesses manage products, content, users, orders, payments,
-            leads, and internal operations with confidence.
+            I build scalable web products, admin systems, e-commerce workflows,
+            CMS platforms, and SEO-friendly business websites using React,
+            Next.js, Node.js, Express, and modern databases.
           </p>
 
           <div className="mt-7 grid max-w-2xl gap-3">
@@ -77,7 +76,7 @@ export function Hero() {
                   HR Snapshot
                 </p>
                 <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[var(--foreground)]">
-                  Full-stack execution with product instincts.
+                  Real business systems, not just frontend screens.
                 </h2>
               </div>
               <div className="hero-initials">TS</div>
@@ -98,7 +97,7 @@ export function Hero() {
 
             <div className="mt-6 grid gap-3 rounded-3xl border border-[var(--line)] bg-[var(--surface)] p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">
-                Reach me
+                Shortlist contact
               </p>
               <a className="text-sm font-semibold text-[var(--foreground)]" href={`mailto:${profile.email}`}>
                 {profile.email}
