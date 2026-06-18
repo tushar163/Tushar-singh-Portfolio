@@ -16,7 +16,7 @@ export const profile = {
   phone: "+91 82184 46921",
   location: "Noida, India",
   socials: {
-    github: "https://github.com/",
+    github: "https://github.com/tushar163",
     linkedin: "https://www.linkedin.com/in/tushar-singh-746985335/",
   },
 };

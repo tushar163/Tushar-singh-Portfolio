@@ -105,9 +105,9 @@ export function Hero() {
               <a className="text-sm font-semibold text-[var(--foreground)]" href={`tel:${profile.phone.replaceAll(" ", "")}`}>
                 {profile.phone}
               </a>
-              <p className="text-sm font-semibold text-[var(--foreground)]">
+              {/* <p className="text-sm font-semibold text-[var(--foreground)]">
                 {profile.location}
-              </p>
+              </p> */}
             </div>
           </div>
         </aside>

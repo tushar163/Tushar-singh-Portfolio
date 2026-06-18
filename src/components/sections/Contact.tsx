@@ -47,7 +47,7 @@ export function Contact() {
         <div className="mt-8 grid gap-3 text-sm text-[var(--muted)]">
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
           <a href={`tel:${profile.phone.replaceAll(" ", "")}`}>{profile.phone}</a>
-          <p>{profile.location}</p>
+          {/* <p>{profile.location}</p> */}
           <div className="flex flex-col gap-3 pt-3 sm:flex-row sm:flex-wrap">
             <a className="btn-primary" href="/resume">
               Download Resume
