@@ -3,7 +3,8 @@ export type ProjectCategory =
   | "E-commerce"
   | "Admin Systems"
   | "Corporate"
-  | "Static Websites";
+  | "Static Websites"
+  | "E-learning";
 
 export type MediaType = "image" | "video" | "visual";
 
@@ -112,6 +113,7 @@ export const projectCategories: ProjectCategory[] = [
   "Admin Systems",
   "Corporate",
   "Static Websites",
+  "E-learning",
 ];
 
 export const projects = [
@@ -200,6 +202,27 @@ export const projects = [
       "Created a more polished business presence with clearer service communication and stronger technical foundations.",
     mediaType: "visual" as MediaType,
     liveUrl: "https://sublimetechnocorp.com",
+  },
+  {
+    title: "Yoga Whisper E-Learning Platform",
+    category: "E-learning" as ProjectCategory,
+    year: "2025",
+    stack: ["Next.js", "React.js", "Node.js", "Express", "Prisma", "MongoDB", "Razorpay", "JWT Auth"],
+    summary:
+      "A full-stack yoga course platform with a consumer-facing website for course browsing, enrollment, and video learning, paired with an admin dashboard for managing courses, users, enrollments, payments, and blog content.",
+    role:
+      "Full-stack development across all three codebases — backend REST API with Express and Prisma, consumer frontend with Next.js, and admin dashboard with data tables and analytics.",
+    problem:
+      "The client needed a complete online yoga course platform to sell video-based courses with payment processing, enrollment tracking, and centralized content management without relying on third-party platforms.",
+    built: [
+      "REST API backend with Express, Prisma, MongoDB, JWT authentication, Razorpay payment integration, and Swagger documentation.",
+      "Consumer-facing frontend with course catalog, video lesson player, progress tracking, Razorpay checkout, blog, and responsive design.",
+      "Admin dashboard with CRUD management for courses, lessons, users, enrollments, payments, and blog posts, plus KPI analytics and rich text editing.",
+    ],
+    impact:
+      "Delivered a production-ready e-learning system enabling course sales, automated enrollment, secure payment processing, and centralized admin management across a unified platform.",
+    mediaType: "visual" as MediaType,
+    liveUrl: "https://yoga-wisper-front.vercel.app/",
   },
 ];
 
