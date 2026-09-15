@@ -27,7 +27,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line)] bg-[var(--panel)] px-4 py-2 text-sm text-[var(--muted)] shadow-sm">
             <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent)] pulse-dot" />
-            Open to full-time roles and freelance builds
+            Available for freelance and full-time roles — Mumbai, India
           </div>
 
           <p className="mt-8 text-sm font-semibold uppercase tracking-[0.32em] text-[var(--accent)]">
@@ -39,7 +39,11 @@ export function Hero() {
           <p className="mt-3 text-lg font-semibold text-[var(--muted)] sm:text-2xl">
             {profile.role} building production-ready {profile.specialty} applications.
           </p>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8">
+
+          <h2 className="mt-6 max-w-2xl text-xl font-semibold text-[var(--foreground)] sm:text-2xl">
+            Who is Tushar Singh?
+          </h2>
+          <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8">
             I build scalable web products, admin systems, e-commerce workflows,
             CMS platforms, and SEO-friendly business websites using React,
             Next.js, Node.js, Express, and modern databases.
@@ -76,7 +80,7 @@ export function Hero() {
                   HR Snapshot
                 </p>
                 <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[var(--foreground)]">
-                  Real business systems, not just frontend screens.
+                  Full Stack Developer Snapshot — Real Business Systems
                 </h2>
               </div>
               <div className="hero-initials">TS</div>

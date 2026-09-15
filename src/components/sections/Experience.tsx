@@ -7,7 +7,7 @@ export function Experience() {
     <MotionSection id="experience" className="space-y-10">
       <SectionIntro
         eyebrow="Experience"
-        title="Delivery experience across client-facing production work."
+        title="Work Experience — Full Stack Web Developer"
         description="Focused on ownership, implementation scope, and business systems delivered across frontend, backend, database workflows, and deployment."
       />
       <div className="grid gap-6">

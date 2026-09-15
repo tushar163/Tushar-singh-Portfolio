@@ -18,7 +18,7 @@ export function About() {
             About me
           </p>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
-            Full-stack execution with product-focused thinking.
+            About Tushar Singh — Full Stack Developer
           </h2>
           <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
             {profile.name} / {profile.role} / {profile.experience}

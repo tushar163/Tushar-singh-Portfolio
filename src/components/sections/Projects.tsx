@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import {
   projectCategories,
@@ -119,7 +120,7 @@ export function Projects() {
     <section id="projects" className="space-y-10">
       <SectionIntro
         eyebrow="Projects"
-        title="Product case studies, structured for fast hiring review."
+        title="Web Development Projects — Case Studies & Portfolio"
         description="Select a project to scan the role, problem, build scope, impact, and stack. Live projects open directly, while non-live projects show supporting media."
       />
 
@@ -235,6 +236,15 @@ export function Projects() {
                         {item}
                       </span>
                     ))}
+                  </div>
+
+                  <div className="mt-6">
+                    <Link
+                      href={`/projects/${selectedProject.slug}`}
+                      className="btn-secondary inline-flex"
+                    >
+                      View Full Case Study →
+                    </Link>
                   </div>
 
                 </div>

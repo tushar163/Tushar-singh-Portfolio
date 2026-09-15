@@ -118,6 +118,7 @@ export const projectCategories: ProjectCategory[] = [
 
 export const projects = [
   {
+    slug: "mk-ghare",
     title: "MK Ghare E-commerce Platform",
     category: "E-commerce" as ProjectCategory,
     year: "2024",
@@ -141,6 +142,7 @@ export const projects = [
       "https://mkgharejewellers.com/?srsltid=AfmBOorVlBltufTrl8gM6x8jeJqwnEBEyZlF0y5mmAYnhDfXBWrU8bZb",
   },
   {
+    slug: "kidzbook-admin",
     title: "Kidzbook Unified Admin Panel System",
     category: "Admin Systems" as ProjectCategory,
     year: "2025",
@@ -162,6 +164,7 @@ export const projects = [
     mediaSrc: "/projects/Kidzbook-admin.png",
   },
   {
+    slug: "shivesh-construction",
     title: "Shivesh Construction Website",
     category: "Static Websites" as ProjectCategory,
     year: "2025",
@@ -183,6 +186,7 @@ export const projects = [
     liveUrl: "https://shivesh-web.vercel.app",
   },
   {
+    slug: "sublime-technocorp",
     title: "Sublime Technocorp Website",
     category: "Corporate" as ProjectCategory,
     year: "2024",
@@ -204,6 +208,7 @@ export const projects = [
     liveUrl: "https://sublimetechnocorp.com",
   },
   {
+    slug: "yoga-whisper",
     title: "Yoga Whisper E-Learning Platform",
     category: "E-learning" as ProjectCategory,
     year: "2025",
@@ -247,4 +252,32 @@ export const seoChecklist = [
   "Lazy-load heavy media and keep video preload to metadata.",
   "Use responsive CSS constraints to prevent layout shift across mobile and desktop.",
   "Keep animation transforms GPU-friendly and respect prefers-reduced-motion.",
+];
+
+export const faqItems = [
+  {
+    question: "What tech stack does Tushar Singh use?",
+    answer:
+      "Tushar Singh specializes in the MERN stack — React.js, Next.js, Node.js, Express.js, and MongoDB. He also works with PostgreSQL, Prisma, Tailwind CSS, Razorpay, OAuth, and modern deployment tools.",
+  },
+  {
+    question: "Is Tushar Singh available for freelance work?",
+    answer:
+      "Yes. Tushar Singh is available for freelance projects, full-time MERN stack roles, and startup teams. He has experience building e-commerce platforms, admin panels, CMS workflows, and SEO-friendly business websites.",
+  },
+  {
+    question: "What types of projects has Tushar Singh built?",
+    answer:
+      "Tushar Singh has built 12+ production applications including e-commerce platforms with payment integration, multi-module admin dashboards with RBAC, SEO-optimized business websites, and full-stack e-learning platforms with video courses and enrollment management.",
+  },
+  {
+    question: "Where is Tushar Singh based?",
+    answer:
+      "Tushar Singh is based in Noida, India (near Mumbai). He has worked with clients at PCD Consultancy Services in Mumbai and Sublime Technocorp in Navi Mumbai, and is open to remote and on-site opportunities.",
+  },
+  {
+    question: "How many years of experience does Tushar Singh have?",
+    answer:
+      "Tushar Singh has 1.5+ years of professional experience in full stack web development, with hands-on work across the full software development lifecycle — from requirements and UI implementation to backend APIs, database design, and deployment.",
+  },
 ];

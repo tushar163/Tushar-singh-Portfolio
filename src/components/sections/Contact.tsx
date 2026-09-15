@@ -37,7 +37,7 @@ export function Contact() {
           Contact
         </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--foreground)] sm:text-4xl">
-          Let&apos;s build something production-ready.
+          Contact Tushar Singh — Full Stack Developer
         </h2>
         <p className="mt-5 text-base leading-7 text-[var(--muted)]">
           Available for full-time MERN stack roles, startup teams, freelance
